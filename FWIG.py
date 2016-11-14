@@ -5,7 +5,6 @@ import smtplib
 import sys
 import socket
 import time
-import base64
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 
